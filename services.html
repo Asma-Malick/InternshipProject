@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        header h1 {
+            margin-top: 20px;
+            text-align: center;
+            color: rgb(204, 154, 255);
+        }
+        .service-cards{
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 20px;
+            margin-left: 200px;
+            padding: 20px;
+          
+
+        }
+        .service-card{
+            width: 700px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            display: none;
+            line-height: 25px;
+        }
+        
+
+.nu {
+    width: 200px;
+    background-color: #333;
+    height: 100vh;
+    display: inline-block;
+    
+    margin-top: 10px;
+    margin-left: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    vertical-align: top;
+}
+
+.nu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nu li {
+    padding: 20px;
+}
+
+.nu a {
+    text-decoration: none;
+    color: white;
+    line-height: 25px;
+}
+.nu a:hover{
+  color: rgb(204, 154, 255);
+}
+
+
+.service-card.active {
+    display: block;
+  
+}
+.service-card a{
+  color: black;
+  padding-right: 15px;
+
+}
+.service-card a:hover{
+  color:  rgb(223, 6, 223);
+}
+.tech img{
+  height: 100px;
+  width: 600px;
+}
+.techno h1{
+  color: black;
+}
+.techno{
+  background-color: rgb(234, 214, 255);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+  .tech{
+    padding-left: 50px;
+    padding-top: 30px;
+  }
+
+  .enquiry {
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 50px;
+  background-image: url("back.jpg");
+  background-size: cover; /* This ensures the background image covers the entire div */
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+}
+
+.enquiry button{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 20px;
+  font-size: 15px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  background-color: black;
+  border: none;
+}
+  
+  footer {
+  background-color: #f9f9f9;
+  padding: 20px 0;
+  text-align:left;
+  margin-left: 40px;
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.branch {
+  flex: 1;
+  margin: 10px;
+}
+
+.branch h3 {
+  color: purple;
+}
+
+.branch p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.copyright {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .branch {
+    flex-basis: 100%;
+  }
+}
+
+header {
+    background-color: white;
+    box-shadow: 10px 10px 5px rgb(237, 237, 237);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: inline-block;
+}
+
+/* Logo styles */
+header .logo img {
+    height: 100px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    display: inline-block;
+}
+
+header nav {
+    display: inline-block;
+    margin-left: 40px; /* Adjust margin as needed */
+}
+
+/* Navigation styles */
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+header nav ul li:last-child {
+    margin-right: 0; /* Remove margin for the last item */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    color: purple;
+}
+
+header nav ul li a:hover {
+    color: rgb(223, 6, 223);
+}
+
+/* Contact button styles */
+header .contact-button {
+    padding: 10px 20px;
+    background-color: rgb(223, 6, 223);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+header .contact-button:hover {
+    background-color: rgb(137, 2, 137); /* Darker shade of purple on hover */
+}
+
+
+
+
+  
+
+
+    </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Company Logo">
+  </div>
+    <nav>
+        <ul>
+            <li><a  href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a style="color: black;" href="services.html">Services</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a  href="careers.html">Careers</a></li>
+            
+        </ul>
+    </nav>
+    
+    <a href="contact.html" class="contact-button">Contact Us</a>
+</header>
+
+   
+  
+        <nav class="nu">
+            <ul>
+                <li><a href="#website-development">Website Development</a></li>
+                <li><a href="#ecommerce-management">Ecommerce Seller Account Management</a></li>
+                <li><a href="#mobile-app-development">Mobile App Development</a></li>
+                <li><a href="#seo">Search Engine Optimization (SEO)</a></li>
+                <li><a href="#digital-marketing">Digital Marketing</a></li>
+                <li><a href="#testing">Testing</a></li>
+                <li><a href="#open-source-customization">Open Source Customization</a></li>
+                <li><a href="#maintenance">Maintenance</a></li>
+                <li><a href="#it-support">IT Support</a></li>
+            </ul>
+        </nav>
+    
+        <div class="service-cards">
+            <div id="website-development" class="service-card">
+                <h2>Website Development</h2>
+                <p>The web designs are recognizing your market standard that is the root of your products and services is publishing in worldwide. Client Website quality which makes amenities are accrediting with all prospects and grasping more information to your consumers.
+
+                  Web designing is incorporating with several kinds of mastery and it regulates production and maintenance of the websites such as graphic design, SEO, and CMS.
+                  Our team is immersing in various process of Web designing with an inventive proposal to elevate your enterprising standards.
+                  We are designing the good clarity of rich website with unique content accuracy under web standard safety norms.
+                  Our service upgrades your latest enterprising trends and enhancing your products, services to capturing more consumers.
+                  We providing efficient support to our clients for managing user-friendly, cost effective services with time framing delivery.</p>
+                  <a href="#">Website Designing</a>
+                  <a href="#">Wordpress Website</a>
+                  <a href="#">E-Commerce</a>
+                  <a href="#">Website Re-design</a>
+                  <a href="#">Website Content Writing</a>
+            </div>
+            <div id="ecommerce-management" class="service-card">
+                <h2>Ecommerce Seller Account Management</h2>
+                <p>Best and effective ECommerce Seller Account Management services
+                  CodeBind Technologies provide everything you need.
+                  Boost your E-Commerce success.
+                  We ensuring to full fill your expectation than providing profitable business.
+                  We are upgrading the latest technologies in a periodical manner and that are delivering good result.</p>
+                  <a href="#">Amazon Seller Account Management</a>
+                  <a href="#">Flipkart Seller Account Management</a>
+                  <a href="#">Meesho Seller Account Management</a>
+                  <a href="#">PayTM Seller Account Management</a>
+                  <a href="#">Myntra Seller Account Management</a>
+                  <a href="#">Ajio Seller Account Management</a>
+            </div>
+            <div id="mobile-app-development" class="service-card">
+                <h2>Mobile App Development</h2>
+                <p>Android is the wide range of application services to fetching your organizations ranging from website integration to mobile portals. The android is open source to build application independently with your own ideas. Therefore, we desired to your business standard is reaching next level in android platform through application development that has great transcend to get consumer requirements in your label application.
+
+                  Our team is developing for all set of android device applications like business, game, productivity, E-commerce and leisure, Social application, much more applications.
+                  We are deciphering your business aspects and challenges have to set out expanding to your customer through our expertise.
+                  Our team has proficient in the developing along with design phases and compatible to work in native and cross platform applications depends up on our client.
+                  We support to our client has launching application in the android play store and guided to maintain their accounts advise to communicating latest business scheme with your customers.</p>
+                  <a href="#">Android Application</a>
+                  <a href="#">IOS Application</a>
+            </div>
+            <div id="seo" class="service-card">
+                <h2>Search Engine Optimization (SEO)</h2>
+                <p>The policy of SEO is to become your websites has top ranking in major search engines. The SEO is capable of maximizing the visitants and reliability of websites that ensure to an acquisition of more consumers through vigorous web traffic. CodeBind is providing optimizing services to augmenting your brand quality and increasing website top ranking in major search engines. And then
+
+                  Our team has involved to improvising your website contents are ethically and integrated coding altogether to enhance its consistency level for certain keywords are signaling to the search engines.
+                  Codebind has to elevate a number of inbound links and some other SEO maneuver for promoting your website.
+                  Our team is continuously monitoring the grade of your website in Search Engine Result pages (SERP), that information is updating day by day, weekly and monthly reports.
+                  Codebind expertise are sophisticated to establishing the services like Analysis of Website, Content modification and management, Analyzing relevant keywords, Website grade enhancement, Meta information management, Generating Inbound links, Industries based Submitting URL, Directory submission, Search engine submission, Generating XML sitemap, Search engine accessing URLs and Navigation etc.,</p>
+                  <a href="#">Search Engine Marketting</a>
+                  <a href="#">Social Media Optimization</a>
+                  <a href="#">Social Media Marketing</a>
+                  <a href="#">Online Reputation Management</a>
+                  <a href="#">App Store Optimization</a>
+            </div>
+            <div id="digital-marketing" class="service-card">
+                <h2>Digital Marketing</h2>
+                <p>The policy of Digital Marketingis to become your websites has top ranking in major search engines. The SEO is capable of maximizing the visitants and reliability of websites that ensure to an acquisition of more consumers through vigorous web traffic. CodeBind is providing optimizing services to augmenting your brand quality and increasing website top ranking in major search engines. And then
+
+                  Our team has involved to improvising your website contents are ethically and integrated coding altogether to enhance its consistency level for certain keywords are signaling to the search engines.
+                  Codebind has to elevate a number of inbound links and some other SEO maneuver for promoting your website.
+                  Our team is continuously monitoring the grade of your website in Search Engine Result pages (SERP), that information is updating day by day, weekly and monthly reports.
+                  Codebind expertise are sophisticated to establishing the services like SEO, SEM, SMM, SMO.</p>
+            </div>
+            <div id="testing" class="service-card">
+                <h2>Testing</h2>
+                <p>Websites are distinguishing your business strategy in the internet world but it has not reached your target audiences. We assist you to improvise your existing websites looks and the contents are very attractive and responsive with advanced web standards.
+
+                  Approaching our clients with innovative design, unique content, and all other requirements are obligating in your redesign website.
+                  We will focus your current website strategy on major search engines if that was not compromised, then we push to express your business objectives with consumer interaction in your redesigning sites.
+                  We ensure to make more traffic to your website and top ranking in search engine results.
+                  We re-design and re-developing in html, php, wordpress, magento websites etc., as per client idea and requirements</p>
+                  <a href="#">Web Testing</a>
+                  <a href="#">Software Testing</a>
+                  <a href="#">QA, QC and Testing</a>
+            </div>
+            <div id="open-source-customization" class="service-card">
+                <h2>Open Source Customization</h2>
+                <p>Open source customization is a superior path to establishing your business with eases and cost effectively in the span of time. However, every business is having divergent thoughts and more challenges to set appropriate requirements in directly. Therefore, CodeBind is suitable technologies to propel our efficient open source products to carry out your business objectives.
+
+                  Codebind is involving to comprehend of our consumer expectation, which our team is providing requisite our customizing services to fulfilling the consumer.
+                  Our expertise is incredible performance and pliability that migrating your business to gain the competitive edge and innovative promotion.
+                  CodeBind consists numerous fields for our clients like template designs, skin designs, Plugin development, Blogging, E-commerce, E-learning and much more services are included.
+                  We are integrating various kinds of open source customizations like Wordpress, Joomla, Drupal , Magento, Zencart, Mambo, PHPBB Customization.
+                  We are not only involved in the customization also provide training to maintain and technical support to our client enterprising team to accessing source.</p>
+            </div>
+            <div id="maintenance" class="service-card">
+                <h2>Maintenance</h2>
+                <p>The vital role of the website development is its manipulating methodologies because whenever revamping an organization scenario that must be reflects in that website. At codebind is proper solution to maintaining your website and suggesting different ways to maximize the traffic to achieve your business goals. Our web maintenance services are
+
+                  An innovative and quality content with accuracy has updating as per your business stipulations.
+                  Technologies changes of your sites on latest vestibule with appropriate malfunction component.
+                  Prevent the data deprivation backup the up to date files and other information on periodically.
+                  Provide technical support services to clarifying your customer queries and suggestions.
+                  Repetitively monitoring the servers and gateway performances and updating the software for security purposes.
+                  Maintaining constant ranking and enhancing your web traffic in major search engines.</p>
+            </div>
+            <div id="it-support" class="service-card">
+                <h2>IT Support</h2>
+                <p>Problems may occur in any specific enterprising products, which IT support is provide customizing solution or other supporting services deliver through mail or remote accessing methods. Our CodeBind is consisting with IT support to elucidate drastic sphere potentialities and future originates solution.
+
+                  CodeBind is ensure our clients to optimize, secure and supports to their mission through our flexible performance mode.
+                  Catering support services for our clients are enabling web development or design, Mobile application development, E-commerce, SEO management and process improvements.
+                  Analyzing your product performance and possible bugs, we ensure to optimize with better functionality.
+                  Providing remote diagnostics solution for all application products maintenance, deployment and debugging issues.</p>
+            </div>
+        </div>
+
+        <div class="techno">
+        <h1>Technologies We Use</h1>
+
+        <div class="tech">
+          
+          <h2>Website Development</h2>
+          <img src="tech1.png"><img src="tech3.png">
+        </div>
+        <div class="tech">
+          
+          <h2>Mobile App Development</h2>
+          <img src="mob1.png">
+        </div>
+        <div class="tech">
+          
+          <h2>Search Engine Optimization (SEO)</h2>
+          <img src="dig1.png"><img src="dig2.png">
+        </div>
+        <div class="tech">
+          
+          <h2>Digital Marketing</h2>
+          <img src="dm.png">
+        </div>
+        <div class="tech">
+          
+          <h2>Testing</h2>
+          <img src="common.png">
+        </div>
+
+        <div class="tech">
+          
+          <h2>Open Source Customization</h2>
+          <img src="common.png">
+        </div>
+        <div class="tech">
+          
+          <h2>Maintenance</h2>
+          <img src="common.png">
+        </div>
+        <div class="tech">
+          
+          <h2>IT support</h2>
+          <img src="common.png">
+        </div>
+        </div>
+
+
+        <div class="enquiry">
+          <h1>Build your brand with us</h1>
+          <button>Enquire Now</button>
+        </div>
+
+
+
+
+        <footer>
+          <div class="footer-container">
+            <div class="branch">
+              <h3>Chennai Office</h3>
+              <p><strong>Address:</strong> CodeBind Technologies, 107, Usman Road, T.Nagar, Chennai - 17.</p>
+              <p><strong>Landmark:</strong> Opposite to The Chennai Silks.</p>
+              <p><strong>Mobile:</strong> +91 9789 617 617, +91 9789 617 717</p>
+              <p><strong>Mail:</strong> info@codebindtechnologies.com</p>
+            </div>
+            <div class="branch">
+              <h3>Coimbatore Office</h3>
+              <p><strong>Address:</strong> CodeBind Technologies, 601, 1st Street, Cross cut Road, Gandhipuram, Coimbatore - 641012</p>
+              <p><strong>Landmark:</strong> Near Gandhipuram Bus stand.</p>
+              <p><strong>Mobile:</strong> +91 975 11 11 343, +91 975 11 11 346</p>
+              <p><strong>Mail:</strong> info@codebindtechnologies.com</p>
+            </div>
+            <div class="branch">
+              <h3>Trichy Office</h3>
+              <p><strong>Address:</strong> 1C, First Floor, Sandanam's Tower, EVR Road, Puthur, Trichy-620017.</p>
+              <p><strong>Landmark:</strong> Opposite to Puthur Government Hospital.</p>
+              <p><strong>Mobile:</strong> +91 99 40 40 80 10</p>
+              <p><strong>Mail:</strong> info@codebindtechnologies.com</p>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>COPYRIGHTS 2022. CODEBIND TECHNOLOGIES ALL RIGHTS RESERVED.</p>
+          </div>
+        </footer>
+
+        
+        <script src="script2.js"></script>
+    </body>
+    </html>
+    
+</body>
+</html>
+`

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text */
+}
+header {
+            background-color: white;
+            box-shadow: 10px 10px 5px rgb(237, 237, 237);
+            font-family: 'Times New Roman';
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          
+        }
+        .logo{
+          display: inline-block;
+        }
+
+        /* Logo styles */
+        .logo img {
+            height: 100px; /* Adjust height as needed */
+            width: auto; /* Maintain aspect ratio */
+            display: inline-block;
+        }
+        nav{
+          display: inline-block;
+          margin-left: 400px;
+          
+        }
+
+        /* Navigation styles */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 40px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0; /* Remove margin for the last item */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            color: purple;
+        }
+        nav ul li a:hover{
+          color: rgb(223, 6, 223);
+        }
+
+        /* Contact button styles */
+        .contact-button {
+            padding: 10px 20px;
+            background-color: rgb(223, 6, 223);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            margin-left: 20px;
+        }
+
+        .contact-button:hover {
+            background-color: rgb(137, 2, 137); /* Darker shade of blue on hover */
+        }
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.container div {
+    background-color: #e4d8f2; /* Light purple */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.container div:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.container h2 {
+    color: #9b7ee2; /* Purple text */
+}
+
+.container p {
+  line-height: 25px;
+    margin-top: 10px;
+    color: #333; /* Dark gray text */
+}
+
+/* Different styles for each section */
+.intro {
+    grid-column: span 2;
+}
+
+.mission {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.vision {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.strategy {
+    grid-column: span 2;
+}
+
+.clients {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.why-choose-us {
+    grid-column: span 2;
+}
+
+.speciality {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+footer {
+  background-color: #f9f9f9;
+  padding: 20px 0;
+  text-align:left;
+  margin-left: 40px;
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.branch {
+  flex: 1;
+  margin: 10px;
+}
+
+.branch h3 {
+  color: purple;
+}
+
+.branch p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.copyright {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .branch {
+    flex-basis: 100%;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Company Logo">
+  </div>
+    <nav>
+        <ul>
+          <li><a  href="home.html">Home</a></li>
+            <li><a style="color: black;" href="#about">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            
+        </ul>
+    </nav>
+    
+    <a href="contact.html" class="contact-button">Contact Us</a>
+</header>
+    <div class="container">
+        <div class="intro">
+            <h2>CodeBind Technologies</h2>
+            <p>CodeBind Technologies is a certified (ISO 9001:2015), IAF, DAC, which is accredit in the software development, industrial seminars, technical training oriented programs. We are extending the relationship with our clients and make familiar in the world around your customers through the digital marketing sectors. Our support is also providing in the optimizing your website in popular search engines that we are certified by the “Google”.</p>
+            <p>A CodeBind Technologies is one of the development infrastructures in various platforms. We are striving to stand the superior position in competitive world. In which, we mainly focusing our infrastructure in the platforms of Website development, Mobile application development, Digital marketing and Embedded Products requirements for all business enterprises on globally.</p>
+        </div>
+        <div class="mission">
+            <h2>Our Mission</h2>
+            <p>As per Business standards, our presence in the techy world to provide some valuable services with high quality solutions like Website Design and Development, Graphics design, Mobile application development, E-Commerce, and SEO. We deliver with great satisfaction and make a growth in the market to our clients around the global.</p>
+        </div>
+        <div class="vision">
+            <h2>Our Vision</h2>
+            <p>We are providing best quality of services to our clients with innovative ideas and cost effective in the competitive global market to navigate the growth of your business standard in worldwide.</p>
+        </div>
+        <div class="strategy">
+            <h2>Our Strategy</h2>
+            <p>Our strategy is constant improving development and design process by investing in high quality designers and developers and their skills and knowledge.</p>
+        </div>
+        <div class="clients">
+            <h2>Our Clients</h2>
+            <p>We believe on teamwork among our clients to make a tremendous success that associated with different fields of clients in the development sectors like as banking, educational, automation, production, manufacturing fields. Especially, we are collaborating with 180+ clients and 2000+ projects on across the world like Japan, Singapore, China, and Germany.</p>
+        </div>
+        <div class="why-choose-us">
+            <h2>Why Choose Us</h2>
+            <p>Committed to helping its clients reach their goals. CodeBind Technologies is now undertaking your technology, management methodologies will help you to focus in your core business. Our major credo is to satisfy the clients and the programs are slotted for the day, required actions will be delivered mutually as per the needs and achieved in good standard. We are comforted with our clients to deliver the maximum value with reasonable prices.</p>
+        </div>
+        <div class="speciality">
+            <h2>Our Speciality</h2>
+            <p>We design. We develop. We provide outstanding support. Design With Love: We love to design and pay great attention to every detail to make perfect end product. Coded to Perfection: Mixed is 100% W3C valid and clean coded. Every section is commented for easier understanding. Dedicated Support: We provide support for all of our themes. So if you have any questions please don’t hesitate to contact us.</p>
+        </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="branch">
+          <h3>Chennai Office</h3>
+          <p><strong>Address:</strong> CodeBind Technologies, 107, Usman Road, T.Nagar, Chennai - 17.</p>
+          <p><strong>Landmark:</strong> Opposite to The Chennai Silks.</p>
+          <p><strong>Mobile:</strong> +91 9789 617 617, +91 9789 617 717</p>
+          <p><strong>Mail:</strong> info@codebindtechnologies.com</p>
+        </div>
+        <div class="branch">
+          <h3>Coimbatore Office</h3>
+          <p><strong>Address:</strong> CodeBind Technologies, 601, 1st Street, Cross cut Road, Gandhipuram, Coimbatore - 641012</p>
+          <p><strong>Landmark:</strong> Near Gandhipuram Bus stand.</p>
+          <p><strong>Mobile:</strong> +91 975 11 11 343, +91 975 11 11 346</p>
+          <p><strong>Mail:</strong> info@codebindtechnologies.com</p>
+        </div>
+        <div class="branch">
+          <h3>Trichy Office</h3>
+          <p><strong>Address:</strong> 1C, First Floor, Sandanam's Tower, EVR Road, Puthur, Trichy-620017.</p>
+          <p><strong>Landmark:</strong> Opposite to Puthur Government Hospital.</p>
+          <p><strong>Mobile:</strong> +91 99 40 40 80 10</p>
+          <p><strong>Mail:</strong> info@codebindtechnologies.com</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>COPYRIGHTS 2022. CODEBIND TECHNOLOGIES ALL RIGHTS RESERVED.</p>
+      </div>
+    </footer>
+</body>
+</html>
+

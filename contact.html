@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<head>
+  <style>
+    #contact {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-container h2 {
+  color: purple;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+.contact-container p {
+  color: rgb(223, 6, 223);
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+  font-size: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: purple;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #8a2be2;
+}
+
+footer {
+  background-color: #f9f9f9;
+  padding: 20px 0;
+  text-align:left;
+  margin-left: 40px;
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.branch {
+  flex: 1;
+  margin: 10px;
+}
+
+.branch h3 {
+  color: purple;
+}
+
+.branch p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.copyright {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .branch {
+    flex-basis: 100%;
+  }
+}
+
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+
+        /* Header styles */
+        header {
+            background-color: white;
+            box-shadow: 10px 10px 5px rgb(237, 237, 237);
+            
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          
+        }
+        .logo{
+          display: inline-block;
+        }
+
+        /* Logo styles */
+        .logo img {
+            height: 100px; /* Adjust height as needed */
+            width: auto; /* Maintain aspect ratio */
+            display: inline-block;
+        }
+        nav{
+          display: inline-block;
+          margin-left: 400px;
+          
+        }
+
+        /* Navigation styles */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 40px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0; /* Remove margin for the last item */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            color: purple;
+        }
+        nav ul li a:hover{
+          color: rgb(223, 6, 223);
+        }
+
+        /* Contact button styles */
+        .contact-button {
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            margin-left: 20px;
+        }
+
+        .contact-button:hover {
+            background-color: rgb(137, 2, 137); /* Darker shade of blue on hover */
+        }
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Company Logo">
+  </div>
+    <nav>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            
+        </ul>
+    </nav>
+    
+    <a    href="#contact" class="contact-button">Contact Us</a>
+</header>
+
+  <section id="contact">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <p>If you have any inquiries or questions, feel free to reach out to us.</p>
+      
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  
+
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="branch">
+        <h3>Chennai Office</h3>
+        <p><strong>Address:</strong> CodeBind Technologies, 107, Usman Road, T.Nagar, Chennai - 17.</p>
+        <p><strong>Landmark:</strong> Opposite to The Chennai Silks.</p>
+        <p><strong>Mobile:</strong> +91 9789 617 617, +91 9789 617 717</p>
+        <p><strong>Mail:</strong> info@codebindtechnologies.com</p>
+      </div>
+      <div class="branch">
+        <h3>Coimbatore Office</h3>
+        <p><strong>Address:</strong> CodeBind Technologies, 601, 1st Street, Cross cut Road, Gandhipuram, Coimbatore - 641012</p>
+        <p><strong>Landmark:</strong> Near Gandhipuram Bus stand.</p>
+        <p><strong>Mobile:</strong> +91 975 11 11 343, +91 975 11 11 346</p>
+        <p><strong>Mail:</strong> info@codebindtechnologies.com</p>
+      </div>
+      <div class="branch">
+        <h3>Trichy Office</h3>
+        <p><strong>Address:</strong> 1C, First Floor, Sandanam's Tower, EVR Road, Puthur, Trichy-620017.</p>
+        <p><strong>Landmark:</strong> Opposite to Puthur Government Hospital.</p>
+        <p><strong>Mobile:</strong> +91 99 40 40 80 10</p>
+        <p><strong>Mail:</strong> info@codebindtechnologies.com</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>COPYRIGHTS 2022. CODEBIND TECHNOLOGIES ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
+</body>
+</html>

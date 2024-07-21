@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+            background-color: white;
+            box-shadow: 10px 10px 5px rgb(237, 237, 237);
+            font-family: 'Times New Roman';
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          
+        }
+        .logo{
+          display: inline-block;
+        }
+
+        /* Logo styles */
+        .logo img {
+            height: 100px; /* Adjust height as needed */
+            width: auto; /* Maintain aspect ratio */
+            display: inline-block;
+        }
+        nav{
+          display: inline-block;
+          margin-left: 400px;
+          
+        }
+
+        /* Navigation styles */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 40px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0; /* Remove margin for the last item */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            color: purple;
+        }
+        nav ul li a:hover{
+          color: rgb(223, 6, 223);
+        }
+
+        /* Contact button styles */
+        .contact-button {
+            padding: 10px 20px;
+            background-color: rgb(223, 6, 223);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            margin-left: 20px;
+        }
+
+        .contact-button:hover {
+            background-color: rgb(137, 2, 137); /* Darker shade of blue on hover */
+        }
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #e3c0ff;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    color: #666;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #8319d9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #6200b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Animation Effects */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeInUp 0.5s ease;
+}
+
+
+        /* Inplant training section */
+        .training-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .training-section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+
+        footer {
+  background-color: #f9f9f9;
+  padding: 20px 0;
+  text-align:left;
+  margin-left: 40px;
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.branch {
+  flex: 1;
+  margin: 10px;
+}
+
+.branch h3 {
+  color: purple;
+}
+
+.branch p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.copyright {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .branch {
+    flex-basis: 100%;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+          <img src="logo.png" alt="Company Logo">
+      </div>
+        <nav>
+            <ul>
+                <li><a  href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a style="color: black;" href="#careers">Careers</a></li>
+                
+            </ul>
+        </nav>
+        
+        <a href="contact.html" class="contact-button">Contact Us</a>
+    </header>
+
+ 
+    <div class="training-section">
+        <h2>Inplant Training and Internship</h2>
+        <p>CodeBind Technologies provides comprehensive Inplant training and Internship programs for students from various fields. Our programs are designed to provide hands-on experience and practical knowledge in real-world scenarios. Whether you're a student looking to gain industry exposure or a professional seeking to enhance your skills, our training and internship opportunities are tailored to meet your needs.</p>
+    </div>
+    <section id="registration">
+        <div class="container">
+            <h2>REGISTRATION</h2>
+            <p>Register soon and book your slot!</p>
+            <h3>STUDENTS REGISTRATION</h3>
+            <p>CHOOSE YOUR INTERESTED LOCATION IN BELOW</p>
+            <form action="#" method="POST">
+                <label for="name">Name*</label>
+                <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+
+                <label for="college">College Name*</label>
+                <input type="text" id="college" name="college" placeholder="Enter your College Name" required>
+
+                <label for="degree">Degree*</label>
+                <select id="degree" name="degree" required>
+                    <option value="B.E">B.E</option>
+                    <option value="B.E">B.Tech</option>
+                    <option value="B.E">MBA</option>
+                    <option value="B.E">BCA</option>
+                    <option value="B.E">MCA</option>
+                    <option value="B.E">BSc</option>
+                    <option value="B.E">MSc</option>
+                    <option value="B.E">B.Com</option>
+                    <option value="B.E">BBA</option>
+                    <option value="B.E">M.Com</option>
+                    <option value="B.E">Others</option>
+                   
+                    <!-- Add more options as needed -->
+                </select>
+
+                <label for="department">Department*</label>
+                <select id="department" name="department" required>
+                    <option value="CSE">CSE</option>
+                    <option value="CSE">CS</option>
+                    <option value="CSE">IT</option>
+                    <option value="CSE">EEE</option>
+                    <option value="CSE">ECE</option>
+                    <option value="CSE">EIE</option>
+                    <option value="CSE">ICE</option>
+                    <option value="CSE">Biomedical</option>
+                    
+                    <!-- Add more options as needed -->
+                </select>
+
+                <label for="year">Year*</label>
+                <select id="year" name="year" required>
+                    <option value="I Year">I Year</option>
+                    
+                    <option value="I Year">II Year</option>
+                    <option value="I Year">III Year</option>
+                    <option value="I Year">IV Year</option><!-- Add more options as needed -->
+                </select>
+
+                <label for="mobile">Mobile Number*</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+
+                <label for="email">E-mail Id*</label>
+                <input type="email" id="email" name="email" placeholder="Enter your E-Mail Id" required>
+
+                <label for="date">Choose your Convenient Date*</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="students">Number of Students (Approximately)</label>
+                <input type="number" id="students" name="students" value="1" required>
+
+                <label for="interest">Interested in*</label>
+                <select id="interest" name="interest" required>
+                    <option value="Inplant Training(IPT)">Inplant Training(IPT)</option>
+                    <option value="Inplant Training(IPT)">Internship</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+                <label for="branch">Branch*</label>
+                <select id="branch" name="branch" required>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Trichy">Trichy</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+                <p>Bonafide Certificate is not mandatory. College ID Card Enough.</p>
+
+                <input type="submit" value="Submit">
+            </form>
+            <p>Inplant Training In Chennai Online Registration</p>
+            <p>Feel free to Contact Us or WhatsApp to this number:</p>
+            <ul>
+                <li>Chennai - <a href="tel:+919789617617">+91 9789617617</a></li>
+                <li>Coimbatore - <a href="tel:+919751111343">+91 9751111343</a></li>
+                <li>Trichy - <a href="tel:+919940408010">+91 9940408010</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+          <div class="branch">
+            <h3>Chennai Office</h3>
+            <p><strong>Address:</strong> CodeBind Technologies, 107, Usman Road, T.Nagar, Chennai - 17.</p>
+            <p><strong>Landmark:</strong> Opposite to The Chennai Silks.</p>
+            <p><strong>Mobile:</strong> +91 9789 617 617, +91 9789 617 717</p>
+            <p><strong>Mail:</strong> info@codebindtechnologies.com</p>
+          </div>
+          <div class="branch">
+            <h3>Coimbatore Office</h3>
+            <p><strong>Address:</strong> CodeBind Technologies, 601, 1st Street, Cross cut Road, Gandhipuram, Coimbatore - 641012</p>
+            <p><strong>Landmark:</strong> Near Gandhipuram Bus stand.</p>
+            <p><strong>Mobile:</strong> +91 975 11 11 343, +91 975 11 11 346</p>
+            <p><strong>Mail:</strong> info@codebindtechnologies.com</p>
+          </div>
+          <div class="branch">
+            <h3>Trichy Office</h3>
+            <p><strong>Address:</strong> 1C, First Floor, Sandanam's Tower, EVR Road, Puthur, Trichy-620017.</p>
+            <p><strong>Landmark:</strong> Opposite to Puthur Government Hospital.</p>
+            <p><strong>Mobile:</strong> +91 99 40 40 80 10</p>
+            <p><strong>Mail:</strong> info@codebindtechnologies.com</p>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>COPYRIGHTS 2022. CODEBIND TECHNOLOGIES ALL RIGHTS RESERVED.</p>
+        </div>
+      </footer>
+</body>
+</html>
